@@ -76,7 +76,7 @@ The server will start on **http://localhost:3000** 🚀
 ---
 
 ## **📁 API Documentation**
-### **📍 Deployed URL:** ``
+### **📍 Deployed URL:** `https://hng-production-3581.up.railway.app/`
 ### **📍 Endpoint:** `GET /user`
 #### **✅ Response (200 OK)**
 ```json
