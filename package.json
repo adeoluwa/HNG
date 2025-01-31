@@ -1,0 +1,34 @@
+{
+  "name": "hng-internship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"npx tsc",
+    "start":"node dist/server.js",
+    "dev":"nodemon src/server.ts",
+    "prisma:migrate":"prisma migrate dev",
+    "prisma:reset":"prisma migrate reset --force && ts-node --transpile-only prisma/seed.ts",
+    "prisma:seed":"ts-node --transpile-only prisma/seed.ts",
+    "prisma:generate":"npx prisma generate",
+    "prisma:studio":"prisma studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "prisma": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.12.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
