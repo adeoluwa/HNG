@@ -1,11 +1,15 @@
 import prisma from "../src/config/prisma";
 
 async function main() {
+  const userData = {
+    email: "kiishijoseph@gmail.com",
+    github_url: "https://github.com/adeoluwa/HNG",
+  };
+
+  console.log("Seeding user data:", userData);
+
   await prisma.user.create({
-    data: {
-      email: "kiishijoseph@gmail.com",
-      github_url: "https://github.com/adeoluwa/HNG",
-    },
+    data: userData,
   });
 }
 
